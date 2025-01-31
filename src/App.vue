@@ -2,6 +2,7 @@
 import { defineAsyncComponent, onMounted, ref } from 'vue';
 
 import TextBox from './components/TextBox.vue';
+import OptimizationDemo from './components/OptimizationDemo.vue';
 
 // const TextBox = defineAsyncComponent(() => import('./components/TextBox.vue'))
 
@@ -49,7 +50,7 @@ const toggleDisabled = () => {
 </script>
 
 <template>
-  <div>
+  <!-- <div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -57,18 +58,19 @@ const toggleDisabled = () => {
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <h1>Vite + Vue</h1>
+  <h1>Vite + Vue</h1> -->
 
-  
+
   <!-- <div style="min-height: 1000px;"></div> -->
 
   <div class="component__wrapper">
-    <h2>Vue TextBox Example</h2>
-    <TextBox v-model="inputValue" :disabled="isDisabled" />
+    <!-- <h2>Vue TextBox Example</h2> -->
+    <OptimizationDemo></OptimizationDemo>
+    <!-- <TextBox v-model="inputValue" :disabled="isDisabled" />
     <p>You typed: {{ inputValue }}</p>
     <button @click="toggleDisabled">
       {{ isDisabled ? 'Enable Input' : 'Disable Input' }}
-    </button>
+    </button> -->
   </div>
 
   <!-- <div style="min-height: 1000px;"></div> -->
